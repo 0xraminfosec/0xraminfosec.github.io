@@ -1,10 +1,15 @@
+@import url('https://cdn.jsdelivr.net/fontsource/fonts/press-start-2p@latest/latin-400-normal.css');
+
+@tailwind base;
 @tailwind components;
+@tailwind utilities;
 
 @layer components {
     .card-base {
         @apply rounded-[var(--radius-large)] overflow-hidden bg-[var(--card-bg)] transition;
     }
     h1, h2, h3, h4, h5, h6, p, a, span, li, ul, ol, blockquote, code, pre, table, th, td, strong {
+        
         @apply transition;
     }
     .card-shadow {
@@ -155,3 +160,42 @@
 .collapsed {
     height: var(--collapsedHeight);
 }
+
+@layer base {
+    @font-face {
+      font-family: 'press-start-2p';
+      font-style: normal;
+      font-weight: 400;
+      font-display: swap;
+      src: url('https://cdn.jsdelivr.net/fontsource/fonts/press-start-2p@latest/latin-400-normal.woff2') format('woff2'),
+           url('https://cdn.jsdelivr.net/fontsource/fonts/press-start-2p@latest/latin-400-normal.woff') format('woff');
+    }
+  }
+  
+  @layer theme {
+    :root {
+      --font-mono: 'IBM Plex Mono', ui-monospace, monospace;
+      --font-display: 'press-start-2p', ui-monospace, monospace;
+      --font-serif: 'Literata Variable', ui-serif, Georgia, Cambria, 'Times New Roman', Times, serif;
+      --color-zag-dark: theme('colors.neutral.900');
+      --color-zag-light: theme('colors.neutral.100');
+      --color-zag-dark-muted: theme('colors.neutral.600');
+      --color-zag-light-muted: theme('colors.neutral.400');
+      --color-zag-accent-light: theme('colors.emerald.400');
+      --color-zag-accent-light-muted: theme('colors.emerald.300');
+      --color-zag-accent-dark: theme('colors.emerald.600');
+      --color-zag-accent-dark-muted: theme('colors.emerald.800');
+    }
+  }
+  
+  @layer utilities {
+    .font-display {
+      font-family: var(--font-display);
+    }
+    .font-mono {
+      font-family: var(--font-mono);
+    }
+    .font-serif {
+      font-family: var(--font-serif);
+    }
+  }
