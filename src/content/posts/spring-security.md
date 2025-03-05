@@ -5,8 +5,7 @@ description: Researching Misconfigurations and Exploitation Techniques
 image: https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhT8SfbSD-cCtqfpmqGKVmWlMvNsyCi7eniDHcmvxUtfmMb3QGyFDu678tJba7RNSrmxaWpboxyaYfke2942wfLHdC5weVWPPmL4vmSmsvGVoz1xAyAXEhACt_hjNlQHx-1LDcE8XQBDdsB/s1600/d1c6ac81f536b60b0df88472d3582cdc4ad644d4.webp
 tags: [Springboot, java]
 category: research
-draft: false
-lang: jp      # Set only if the post's language differs from the site's language in `config.ts`
+draft: false      # Set only if the post's language differs from the site's language in `config.ts`
 ---
 
 ### Table of contents
