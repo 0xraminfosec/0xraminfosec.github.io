@@ -9,7 +9,7 @@ draft: false      # Set only if the post's language differs from the site's lang
 ---
 
 **Hi Security researchers,**  
-Hey fellow hackers and bug hunters 👋  
+
 This is the story of how a simple revisit to a website turned into full AWS access, database backups, and accidental exposure of a cricket team's internal data - all because nobody bothered to fix the bugs I reported years ago.
 
 Relax, sit back. This one’s wild. 🏏💥
